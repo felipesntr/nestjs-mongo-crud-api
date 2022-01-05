@@ -10,11 +10,11 @@ export class UsersService {
   /**
    * Create a new user
    * @param name
-   * @param email
-   * @param password
+   * @param surname
+   * @param points
    */
-  async create(name: string, email: string, password: string): Promise<User> {
-    const createdUser = new this.userModel({ name, email, password });
+  async create(name: string, surname: string, points: string): Promise<User> {
+    const createdUser = new this.userModel({ name, surname, points });
     return createdUser.save();
   }
 

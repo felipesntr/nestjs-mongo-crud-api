@@ -10,5 +10,5 @@ export interface User extends mongoose.Document {
   id: string;
   name: string;
   surname: string;
-  points: number;
+  points: string;
 }
